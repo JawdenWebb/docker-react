@@ -6,4 +6,4 @@ COPY ./ ./
 CMD ["npm", "run", "build"]
 
 FROM nginx:latest as runner
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app /usr/share/nginx/html
