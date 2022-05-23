@@ -5,5 +5,5 @@ RUN npm install
 COPY ./ ./
 CMD ["npm", "run", "build"]
 
-FROM nginx as runner
+FROM nginx:latest as runner
 COPY --from=builder /app/build /usr/share/nginx/html

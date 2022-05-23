@@ -1,3 +1,5 @@
+# token: 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
+
 name: Deploy Frontend
 on:
   push:
